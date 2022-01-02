@@ -1,0 +1,2717 @@
+-- Services
+local ts = game:service('TweenService')
+local teleport = game:service('TeleportService')
+local startGui = game:service('StarterGui')
+local run = game:service('RunService')
+
+-- Services end
+ 
+-- World id's 
+local Earth = 536102540
+local Space = 478132461
+local Queue = 3565304751
+local Future = 569994010
+local Namek = 882399924
+local Sw = 2046990924
+local Heaven = 3552157537
+local Zaros = 2651456105
+local Broly = 2050207304
+local HTC = 882375367
+-- World id's end 
+ 
+ 
+--Admin
+game.Players.LocalPlayer.Chatted:Connect(function(msg) 
+msg = string.split(msg, " ")
+ 
+-- World teleports
+if msg[1] == "-earth" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "tping to Earth...",
+})
+ 
+wait(1)
+teleport:Teleport(Earth) --Tp's You to Earth
+end
+ 
+if msg[1] == "-namek" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "tping to Namek...",
+})
+ 
+wait(1)
+teleport:Teleport(Namek) --Tp's You to Namek
+end
+ 
+if msg[1] == "-space" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "tping to Space...",
+})
+ 
+wait(1)
+teleport:Teleport(Space) --Tp's You to Space
+end
+ 
+if msg[1] == "-future" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "tping to the Future...",
+})
+ 
+wait(1)
+teleport:Teleport(Future) --Tp's You to the Future
+end
+ 
+if msg[1] == "-queue" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "tping to the Queue...",
+})
+ 
+wait(1)
+teleport:Teleport(Queue) --Tp's You to the Queue
+end
+ 
+if msg[1] == "-zaros" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "tping to Zaros...",
+})
+ 
+wait(1)
+teleport:Teleport(Zaros) --Tp's You to Zaros
+end
+ 
+ 
+if msg[1] == "-secret" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "tping to Secret World...",
+})
+ 
+wait(1)
+teleport:Teleport(Sw) --Tp's You to Secret World
+end
+ 
+if msg[1] == "-rj" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Rejoining...",
+})
+wait(1)
+game:service('TeleportService'):Teleport(game.PlaceId)
+end
+ 
+-- World teleports end
+ 
+-- Other variables
+plr = game.Players.LocalPlayer
+live = workspace.Live
+ti = TweenInfo.new(1.2, Enum.EasingStyle.Sine)
+tx = TweenInfo.new(0.9, Enum.EasingStyle.Exponential)
+tk = TweenInfo.new(0.5, Enum.EasingStyle.Exponential)
+tj = TweenInfo.new(1, Enum.EasingStyle.Sine)
+-- Other variables end
+ 
+-- Tweens
+if game.PlaceId == Earth then
+if msg[1] == "-south" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to South City...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-456.571716, 28.5875511, -6412.57373)}):Play() --Tp's You to West City
+end
+
+if msg[1] == "-qhole" or msg[1] == "-wormhole" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to da hole...",
+})
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(2656.84619, 3945.10474, -2516.58545)}):Play()
+game.Workspace["Wormhole"].TouchInterest:Destroy()
+end
+ 
+if msg[1] == "-west" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to West City...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-570.729919, 23.2874756, -2884.24707)}):Play() --Tp's You to West City
+end
+ 
+if msg[1] == "-futureship" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to The Future Ship...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(784.967712, 23.3874989, -1808.50037)}):Play() --Tp's You to the Future Ship
+end
+ 
+if msg[1] == "-spaceship" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to The Spaceship...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-1193.26306, 22.8875332, -2926.16675)}):Play() --Tp's You to the Spaceship
+end
+ 
+if msg[1] == "-namekship" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to The Namek Ship...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(1419.84155, 93.9263382, 3186.69092)}):Play() --Tp's You to the Namek ship
+end
+ 
+if msg[1] == "-etops" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Earth Top Pad...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(2507.27979, 3945.10522, -2038.63257)}):Play() --Tp's You to the Earth Top Pad
+end
+ 
+if msg[1] == "-ehtops" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Earth Hard Top Pad...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(2512.58545, 3945.10522, -2515.66553)}):Play() --Tp's You to the Earth Hard Top Pad
+end
+ 
+if msg[1] == "-earthbroly" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to The Broly Pad...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(2724.93506, 3945.10522, -2273.66577)}):Play() --Tp's You to the Earth Broly Pad
+end
+ 
+if msg[1] == "-central" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Central City...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-3834.32837, 23.2875633, -1427.96899)}):Play() --Tp's You to Central City
+end
+ 
+if msg[1] == "-kbeans" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Korins Beans...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-3897.54932, 24.2900181, -2043.68091)}):Play() --Tp's You to Korins Bean Shop
+end
+ 
+if msg[1] == "-re" or msg[1] == "-respawn" then
+ startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Respawning...",
+})
+   local args = {[1] = workspace.FriendlyNPCs:FindFirstChild("Hair Stylist")}
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(unpack(args))
+wait(.3)
+   local args = {[1] = {[1] = "Yes"}}
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(unpack(args))
+wait(.3)
+   local args = {[1] = "woah"}
+game:GetService("Players").LocalPlayer.Backpack.HairScript.RemoteEvent:FireServer(unpack(args))
+   local Player = game.Players.LocalPlayer
+end
+ 
+if msg[1] == "-antiq" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "congrats, you now cannot be dragged into the wormhole by some salty bitch!...",
+})
+game.Workspace["Wormhole"].TouchInterest:Destroy()
+end
+ 
+if msg[1] == "-south1v1" or msg[1] == "-s1v1" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going South City 1v1...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-174.812622, 24.2874947, -6725.3623)}):Play() --Tp's You to South City 1v1
+end
+
+if msg[1] == "-west1v1" or msg[1] == "-w1v1" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to West City 1v1...",
+})
+ 
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(45.9248962, 21.2874985, -2384.07471)}):Play() --Tp's You to West City 1v1
+end
+ 
+ 
+if msg[1] == "-satan" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Satan City...",
+})
+    
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-5790, 140.287689, -2747)}):Play() --Tp's You to Satan City
+end
+
+if msg[1] == "-moveshop" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Whis Moveshop...",
+})
+
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-3727.14038, 24.2877941, -1228.64685)}):Play() -- whis ship
+end
+
+if msg[1] == "-elderkai" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Elder Kai...",
+})
+
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-3015.85547, 24.2875423, -1904.08069)}):Play() -- elder kai shop
+end
+
+if msg[1] == "-hairstylist" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to hair stylist...",
+})
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-189.98381, 26.446579, -6422.45361)}):Play() -- hair stylist
+end
+
+if msg[1] == "-lookout" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to the lookout...",
+})
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(2301.67163, 3945.10449, -2274.34033)}):Play() -- lookout
+end
+
+
+if msg[1] == "-saiyans" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Saiyans...",
+})
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(613.55896, 177.112396, 114.378334)}):Play() -- saiyans
+end
+
+if msg[1] == "-zshop" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Zaros Shop...",
+})
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(636.860718, 106.899757, 3937.83618)}):Play() -- zaros shop
+end
+
+if msg[1] == "-cellarena" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to cell arena..",
+})
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-1003.3598, 28.2966881, -855.309143)}):Play() -- cell arena
+end
+
+end -- Earth Waypoint/Anything? End
+ 
+ if msg[1] == "-f1v1" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to future 1v1...",
+})
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(3601.84546, -92.1488647, 1977.94543)}):Play() -- cell arena
+end
+ 
+  if msg[1] == "-sw1v1" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to secret world 1v1...",
+})
+ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-1296.65906, 22.3469143, -2146.48535)}):Play() -- cell arena
+end
+
+-- Namek Waypoints Start
+if game.PlaceId == Namek then
+if msg[1] == "-frieza" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Frieza...",
+})
+ 
+ts:Create(root, ti, {CFrame = CFrame.new(2700.86182, 128.600739, 499.049194)}):Play() --Tp's You to the Frieza In namek
+end
+end -- Namek Waypoints End
+ 
+ if msg[1] == "-hquests" or msg[1] == "-hc" then
+ startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Heaven Quests",
+})
+ ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(968.027283, 22.2999935, 1526.45691)}):Play()
+ end
+ 
+if msg[1] == "-topre" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Respawn On...",
+})
+ 
+Die = game.Players.LocalPlayer.Character
+lplr = game:GetService("Players").LocalPlayer
+ 
+   game:GetService("RunService").RenderStepped:connect(function()
+       if Die.Humanoid.Health == 1 then
+          game:GetService("Players").LocalPlayer.Character.SuperAction:Destroy()
+          
+   wait(0.2)
+     game:GetService("TweenService"):Create(lplr.Character.HumanoidRootPart, TweenInfo.new(0.5, Enum.EasingStyle.Sine), {CFrame = CFrame.new(-196.093887, 335.289124, -33.2940483)}):Play()
+    
+     end
+        end)
+            end
+ 
+if msg[1] == '-goto' then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Going to Player/Npc...",
+})
+for i,v in pairs(live:GetChildren()) do
+    if string.match(v.Name, msg[2]) then
+        if v:FindFirstChild("HumanoidRootPart") then
+            local goal = {}
+            goal.CFrame = v.HumanoidRootPart.CFrame
+            ts:Create(live[plr.Name].HumanoidRootPart, ti, goal):Play()
+        end
+    end
+end
+end
+ 
+-- Tweens end
+ 
+-- World Tp's/Waypoint End --->
+ 
+---------------------------------------------------------
+ 
+-- Pvp Assets and Other Misc --->
+ 
+if msg[1] == '-ns' or msg[1] == "-noslow" then
+   startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Noslow On...",
+})
+    noslow = true
+    while noslow and game:service('RunService').RenderStepped:Wait() do
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if v.Name == "Justice Combination" then
+local action = game.Players.LocalPlayer.Character:WaitForChild("Action")
+if action then wait() action:Destroy() end end
+if v.Name == "Attacking" then
+v:Destroy()
+end
+if v.Name == "Action" then
+v:Destroy()
+end
+if v.Name == "Killed" then
+v:Destroy()
+end
+end
+    end
+end
+
+if msg[1] == "-nsoff" then
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Noslow Off...",
+})
+    noslow = false
+    end
+ 
+if msg[1] == "-slotchange" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Opening Slot Changer...",
+})  
+ 
+Npc = workspace.FriendlyNPCs
+    
+if Npc:FindFirstChild("Character Slot Changer") then
+    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(Npc["Character Slot Changer"])
+end
+end
+ 
+if msg[1] == "-rwings" then
+ startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Wings Removed...",
+})
+game.Players.LocalPlayer.Character:FindFirstChild('RebirthWings').Handle:Destroy()
+end
+ 
+if msg[1] == "-godmode" or msg[1] == "-gm" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Godmode Activated...",
+})
+ 
+local GodModeBool = true
+ 
+run.RenderStepped:connect(function()
+    if GodModeBool then
+        workspace.Touchy.Part.CFrame = plr.Character.HumanoidRootPart.CFrame + Vector3.new(0,0,1)
+        if plr.PlayerGui:FindFirstChild("Popup") then
+            plr.PlayerGui.Popup.Enabled = false
+        end
+        if not GodModeBool then
+            return
+        end
+    end
+end)
+end
+ 
+if msg[1] == "-hidelvl" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Hiding level...",
+})
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model"):Destroy()
+end
+
+ 
+if msg[1] == "-auraremove" or msg[1] == "-raura" then
+game:service('StarterGui'):SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Deleting Aura...",
+})
+ 
+for i,v in pairs(plr.Character.HumanoidRootPart:GetChildren()) do 
+    if v.Name:find("Aura") or v.Name:find("Trail") or v.Name:find("SaiyanLoop") or v.Name:find("Lightning") then 
+        v:Destroy() 
+    end
+end
+end
+ 
+
+ 
+if msg[1] == "-expfreeze" or msg[1] == "-xpfreeze" then
+ startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Exp is Froze...",
+})
+   repeat wait()
+ until game:IsLoaded()
+   game.Players.LocalPlayer.PlayerGui:WaitForChild("HUD")
+wait(1)
+
+  
+function EnticzzLikesFemboys()
+     Plr = game:GetService('Players').LocalPlayer
+  game.Workspace.Live[Plr.Name].True:destroy()  
+end EnticzzLikesFemboys()
+end
+ 
+ 
+if msg[1] == "-getcframe" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Cframe Copied to Clipboard...",
+})
+setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame))
+end
+ 
+if msg[1] == "-rhalo" then
+  startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Halo Removed...",
+})
+game.Players.LocalPlayer.Character:FindFirstChild('RealHalo').Handle:Destroy()
+end
+ 
+if msg[1] == "-invis" then
+  startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "you are now invis, hard reset to become vis...",
+})
+      local lplr = game.Players.LocalPlayer  
+      Players = game.Players.LocalPlayer.Character
+        Character = game.Players.LocalPlayer
+        
+        Players.Humanoid:EquipTool(Character.Backpack["Flash Strike"])
+           Players["Flash Strike"]:Activate()
+       lplr.Character["Flash Strike"].Activator.Animation:Destroy()
+end
+ 
+if msg[1] == "-beerus" then
+ startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "You are now Beerus??!, Hard reset to unbeerus lol wtf...",
+})
+ 
+      player = game.Players.LocalPlayer while wait() do
+if game.Workspace.Live[player.Name].Animate.idle:FindFirstChild("Animation1") then
+   game.Workspace.Live[player.Name].Animate.idle:FindFirstChild("Animation1").AnimationId = "rbxassetid://1171558651"
+if game.Workspace.Live[player.Name].Animate.walk:FindFirstChild("RunAnim") then
+game.Workspace.Live[player.Name].Animate.walk:FindFirstChild("RunAnim").AnimationId = "rbxassetid://1171558651"
+end end end
+    local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local Animate 
+local Humanoid = player.Character:FindFirstChild('Humanoid')
+mouse.KeyDown:Connect(function(Key) 
+ if Key == "w" then
+  local Animation = Instance.new("Animation", player.Character)
+  Animation.AnimationId = "rbxassetid://1171558651"
+  Animate = Humanoid:LoadAnimation(Animation)
+  Animate:Play()
+end
+end)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "FS Cmd";
+            Text = "Beerus Animation Loaded";
+        })
+end
+ 
+if msg[1] == "-dc" or msg == "-grab" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Press u to use. Don't miss retard, hard reset to ungay...",
+})
+local plr = game:GetService("Players").LocalPlayer
+local mouse = plr:GetMouse()
+
+mouse.KeyDown:connect(function(key)
+    if key == "u" then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+game.Players.LocalPlayer.Character["Dragon Crush"]:Activate()
+game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+end
+end)
+end
+ 
+if msg[1] == "-speedhorse" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Hold v and move, you are now extremely fast(hard reset to undo)...",
+})
+down = false
+velocity = Instance.new("BodyVelocity")
+velocity.maxForce = Vector3.new(10000000, 0, 10000000)
+local speed    = 10000000
+gyro           = Instance.new("BodyGyro")
+gyro.maxTorque = Vector3.new(10000000, 0, 10000000)
+local hum = game.Players.LocalPlayer.Character.Humanoid
+function onButton1Down(mouse)
+down = true
+velocity.Parent = game.Players.LocalPlayer.Character.UpperTorso
+velocity.velocity = (hum.MoveDirection) * speed
+gyro.Parent = game.Players.LocalPlayer.Character.UpperTorso
+while down do
+if not down then break end
+velocity.velocity = (hum.MoveDirection) * speed
+local refpos = gyro.Parent.Position + (gyro.Parent.Position - workspace.CurrentCamera.CoordinateFrame.p).unit * 5
+gyro.cframe = CFrame.new(gyro.Parent.Position, Vector3.new(refpos.x, gyro.Parent.Position.y, refpos.z))
+wait(0.1)
+end
+end
+function onButton1Up(mouse)
+velocity.Parent = nil
+gyro.Parent = nil
+down = false
+end
+function onSelected(mouse)
+mouse.KeyDown:connect(function(k) if k:lower()=="v"then onButton1Down(mouse)end end)
+mouse.KeyUp:connect(function(k) if k:lower()=="v"then onButton1Up(mouse)end end)
+end
+onSelected(game.Players.LocalPlayer:GetMouse())
+end
+ 
+ if msg [1] == "-chatspy" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Stalker...",
+})
+enabled = false
+spyOnMyself = true
+public = false
+publicItalics = true
+privateProperties = {
+	Color = Color3.fromRGB(0,255,255); 
+	Font = Enum.Font.SourceSansBold;
+	TextSize = 18;
+}
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+local instance = (_G.chatSpyInstance or 0) + 1
+_G.chatSpyInstance = instance
+if _G.chatSpyInstance == instance then
+if p==player and msg:lower():sub(1,4)=="/spy" then
+enabled = not enabled
+wait(0.3)
+privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+elseif enabled and (spyOnMyself==true or p~=player) then
+msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+local hidden = true
+local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+hidden = false
+end
+end)
+wait(1)
+conn:Disconnect()
+if hidden and enabled then
+				if public then
+					saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+				else
+					privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+					StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+				end
+			end
+		end
+	end
+privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+local chatFrame = player.PlayerGui.Chat.Frame
+chatFrame.ChatChannelParentFrame.Visible = true
+chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+end
+ 
+if msg[1] == "-movespam" or msg[1] == "-ms" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Movespam on, press [ to Activate and Deactivate...",
+})
+MoveSpamBind = "["
+Moves =  {"Demon Flash", 
+        "Neo Wolf Fang Fist", 
+        "Flash Skewer", 
+        "Sweep Kick", 
+        "Burning Blast", 
+        "TS Molotov", 
+        "Blaster Meteor", 
+        "Anger Rush", 
+        "Meteor Crash", 
+        "Big Bang Kamehameha"}
+
+local baka = game:GetService("Players").LocalPlayer
+local mouse = baka:GetMouse()
+_G.Toggle = false
+
+mouse.KeyDown:Connect(function(Key)
+    if Key == MoveSpamBind then
+        if not _G.Toggle then
+            _G.Toggle = true
+            while _G.Toggle == true do
+                wait()
+                for i, v in pairs(baka.Backpack:GetChildren()) do
+                       if table.find( Moves, v.Name) then
+                               v.Parent = baka.Character
+                               v:Activate()
+                               wait(0.1)
+                               v:Deactivate()
+                               v.Parent = baka.Backpack
+                          end 
+                    end
+               end
+        else
+            _G.Toggle = false
+        end
+    end
+end)
+end
+
+if msg[1] == "-movespam2" or msg[1] == "-ms2" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Movespam2 on, press ] to Activate and Deactivate...",
+})
+MoveSpamBind = "["
+Moves =  {"Strong Kick", 
+        "Neo Wolf Fang Fist", 
+        "Flash Skewer", 
+        "Sweep Kick", 
+        "Kick Barrage", 
+        "TS Molotov", 
+        "Blaster Meteor", 
+        "Anger Rush", 
+        "Meteor Crash", 
+        "God Slicer"}
+
+local baka = game:GetService("Players").LocalPlayer
+local mouse = baka:GetMouse()
+_G.Toggle = false
+
+mouse.KeyDown:Connect(function(Key)
+    if Key == MoveSpamBind then
+        if not _G.Toggle then
+            _G.Toggle = true
+            while _G.Toggle == true do
+                wait()
+                for i, v in pairs(baka.Backpack:GetChildren()) do
+                       if table.find( Moves, v.Name) then
+                               v.Parent = baka.Character
+                               v:Activate()
+                               wait(0.1)
+                               v:Deactivate()
+                               v.Parent = baka.Backpack
+                          end 
+                    end
+               end
+        else
+            _G.Toggle = false
+        end
+    end
+end)
+end
+
+if msg[1] == "-dcmovespam" or msg[1] == "-dcms" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Press O to use Grab and P to activate and deactivate movespam...",
+})
+local plr = game:GetService("Players").LocalPlayer
+local mouse = plr:GetMouse()
+
+mouse.KeyDown:connect(function(key)
+    if key == "o" then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+game.Players.LocalPlayer.Character["Dragon Crush"]:Activate()
+game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+end
+end)
+MoveSpamBind = "p"
+Moves =  {"Demon Flash", 
+        "Neo Wolf Fang Fist", 
+        "Flash Skewer", 
+        "Sweep Kick", 
+        "Burning Blast", 
+        "TS Molotov", 
+        "Blaster Meteor", 
+        "Anger Rush", 
+        "Meteor Crash", 
+        "Big Bang Kamehameha"}
+
+local baka = game:GetService("Players").LocalPlayer
+local mouse = baka:GetMouse()
+_G.Toggle = false
+
+mouse.KeyDown:Connect(function(Key)
+    if Key == MoveSpamBind then
+        if not _G.Toggle then
+            _G.Toggle = true
+            while _G.Toggle == true do
+                wait()
+                for i, v in pairs(baka.Backpack:GetChildren()) do
+                       if table.find( Moves, v.Name) then
+                               v.Parent = baka.Character
+                               v:Activate()
+                               wait(0.1)
+                               v:Deactivate()
+                               v.Parent = baka.Backpack
+                          end 
+                    end
+               end
+        else
+            _G.Toggle = false
+        end
+    end
+end)
+end
+
+if msg[1] == "-hardre" or msg[1] == "-hardreset" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Resetting",
+})
+ game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    end
+
+if msg[1] == "-freeze" or msg[1] == "-grj" then
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Freeze ON       U = Grab      I = Rj",
+})
+    local plr = game:GetService("Players").LocalPlayer
+local mouse = plr:GetMouse()
+
+mouse.KeyDown:connect(function(key)
+    if key == "u" then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+game.Players.LocalPlayer.Character["Dragon Crush"]:Activate()
+game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+end
+end)
+mouse.KeyDown:connect(function(key)
+if key == "i" then
+    game:service('TeleportService'):Teleport(game.PlaceId)
+    
+end
+end)
+end
+
+if msg[1] == "-tpdc" then
+   startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Zoomin",
+})
+    game:GetService("RunService").RenderStepped:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+    for i,v in pairs(live:GetChildren()) do
+    if string.match(v.Name, msg[2]) then
+        if v:FindFirstChild("HumanoidRootPart") then
+            local goal = {}
+            goal.CFrame = v.HumanoidRootPart.CFrame
+            ts:Create(live[plr.Name].HumanoidRootPart, tk, goal):Play()
+        end
+    end
+end
+end)
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+game.Players.LocalPlayer.Character["Dragon Crush"]:Activate()
+game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+wait(0.5)
+        game:service('TeleportService'):Teleport(game.PlaceId)
+    end
+
+        
+if msg[1] == "-removeall" or msg[1] == "-rall" then
+   startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Halo, wings and level removed (Until you rejoin)",
+})
+    game:GetService("RunService").RenderStepped:connect(function()
+    game.Players.LocalPlayer.Character:FindFirstChild('RealHalo').Handle:Destroy()
+    game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model"):Destroy()
+    game.Players.LocalPlayer.Character:FindFirstChild('RebirthWings').Handle:Destroy()
+    end)
+    end
+
+ if msg[1] == "-loopbean2" or msg[1] == "-ibs" then
+      startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "loopbeanspam on",
+})
+    game:GetService("RunService").RenderStepped:connect(function() --loop
+        game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        for i,v in pairs(live:GetChildren()) do -- tp
+    if string.match(v.Name, msg[2]) then 
+        if v:FindFirstChild("HumanoidRootPart") then
+            local goal = {}
+            goal.CFrame = v.HumanoidRootPart.CFrame
+            ts:Create(live[plr.Name].HumanoidRootPart, tx, goal):Play()
+        end
+    end
+end
+wait(2.8)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer(true) --beanspam
+wait(2.8)
+local args = {[1] = workspace.FriendlyNPCs:FindFirstChild("Hair Stylist")}
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(unpack(args))
+wait(.3)
+   local args = {[1] = {[1] = "Yes"}}
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(unpack(args))
+wait(.3)
+   local args = {[1] = "woah"}
+game:GetService("Players").LocalPlayer.Backpack.HairScript.RemoteEvent:FireServer(unpack(args))
+   local Player = game.Players.LocalPlayer
+end)
+end
+
+if msg[1] == "-stpdc" then
+   startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Zoomin slower",
+})
+    game:GetService("RunService").RenderStepped:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+    for i,v in pairs(live:GetChildren()) do
+    if string.match(v.Name, msg[2]) then
+        if v:FindFirstChild("HumanoidRootPart") then
+            local goal = {}
+            goal.CFrame = v.HumanoidRootPart.CFrame
+            ts:Create(live[plr.Name].HumanoidRootPart, tj, goal):Play()
+        end
+    end
+end
+end)
+wait(4.2)
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+game.Players.LocalPlayer.Character["Dragon Crush"]:Activate()
+game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+wait(0.5)
+        game:service('TeleportService'):Teleport(game.PlaceId)
+    end
+
+if msg[1] == "-nc" or msg[1] == "-noclip" then
+      startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Press K to noclip and Clip",
+})
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+ 
+if key == "k" then
+noclip = not noclip
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+end
+
+
+if msg[1] == "-antiglitch" then
+      startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "AntiGlitch Active, hard reset to disable",
+})
+game.Players.LocalPlayer.Character.Humanoid.Animator:Destroy()
+end
+
+if msg[1] == "-antiafk" then
+         startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "AntiAfk Active",
+})
+    for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+v:Disable()
+end
+end
+
+
+if msg[1] == "-aon" then
+             startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "frozen",
+})
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    end
+
+if msg[1] == "-aoff" then
+             startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "unfrozen",
+})
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    end
+
+if msg[1] == "-gui" or msg[1] == "-hub" then
+      startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Enticz Hub Made by Enticzz#6666",
+})
+local plr = game.Players.LocalPlayer
+game.Workspace:WaitForChild("Live")
+game.Workspace.Live:WaitForChild(plr.Name)
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Xenfias/tsiLetihW/main/SiuG'))() -- Libary
+local plrs = game:GetService("Players")
+
+
+--Properties:
+
+-- Variables
+local Earth = 536102540
+local Space = 478132461
+local Queue = 3565304751
+local Future = 569994010
+local Namek = 882399924
+local Sw = 2046990924
+local Heaven = 3552157537
+local Zaros = 2651456105
+local Broly = 2050207304
+local ts = game:service('TweenService')
+local teleport = game:service('TeleportService')
+local startGui = game:service('StarterGui')
+local run = game:service('RunService')
+
+
+local plrs = game:GetService("Players")
+local TeamBased = false ; local teambasedswitch = "p"
+local presskeytoaim = true; local aimkey = "v"
+local raycast = false
+
+local espupdatetime = 5; autoesp = false
+
+
+
+local lockaim = true; local lockangle = 5
+
+
+
+function findwat(folder, what)
+	for i, smth in pairs(folder:GetChildren()) do
+		if string.find(string.lower(tostring(smth)), string.lower(what)) then
+			return smth
+		end
+	end
+end
+
+local plrs = findwat(game, "Players")
+
+
+
+
+local Gui = Instance.new("ScreenGui")
+local Move = Instance.new("Frame")
+local Main = Instance.new("Frame")
+local st1 = Instance.new("TextLabel")
+local st1_2 = Instance.new("TextLabel")
+local st1_3 = Instance.new("TextLabel")
+local Name = Instance.new("TextLabel")
+--Properties:
+
+-- Scripts:
+
+
+local plrsforaim = {}
+
+local lplr = game:GetService("Players").LocalPlayer
+Move.Draggable = true
+Gui.ResetOnSpawn = false
+Gui.Name = "Chat"
+Gui.DisplayOrder = 999
+
+	Gui.Parent = plrs.LocalPlayer.PlayerGui
+
+
+f = {}
+
+
+
+local cam = game.Workspace.CurrentCamera
+
+local mouse = lplr:GetMouse()
+local switch = false
+local key = "k"
+local aimatpart = nil
+mouse.KeyDown:Connect(function(a)
+	if a == "t" then
+		print("worked1")
+		f.addesp()
+	elseif a == "u" then
+		if raycast == true then
+			raycast = false
+		else
+			raycast = true
+		end
+	elseif a == "l" then
+		if autoesp == false then
+			autoesp = true
+		else
+			autoesp = false
+		end
+	end
+	if a == key then
+		if switch == false then
+			switch = true
+		else
+			switch = false
+			if aimatpart ~= nil then
+				aimatpart = nil
+			end
+		end
+	elseif a == teambasedswitch then
+		if TeamBased == true then
+			TeamBased = false
+			teambasedstatus.Text = tostring(TeamBased)
+		else
+			TeamBased = true
+			teambasedstatus.Text = tostring(TeamBased)
+		end
+	elseif a == aimkey then
+		if not aimatpart then
+			local maxangle = math.rad(20)
+			for i, plr in pairs(plrs:GetChildren()) do
+				if plr.Name ~= lplr.Name and plr.Character and plr.Character.Head and plr.Character.Humanoid and plr.Character.Humanoid.Health > 1 then
+					if TeamBased == true then
+						if plr.Team.Name ~= lplr.Team.Name then
+							local an = checkfov(plr.Character.Head)
+							if an < maxangle then
+								maxangle = an
+								aimatpart = plr.Character.Head
+							end
+						end
+					else
+						local an = checkfov(plr.Character.Head)
+							if an < maxangle then
+								maxangle = an
+								aimatpart = plr.Character.Head
+							end
+							print(plr)
+					end
+					plr.Character.Humanoid.Died:Connect(function()
+						if aimatpart.Parent == plr.Character or aimatpart == nil then
+							aimatpart = nil
+						end
+					end)
+				end
+			end
+		else
+			aimatpart = nil
+		end
+	end
+end)
+
+function getfovxyz (p0, p1, deg)
+	local x1, y1, z1 = p0:ToOrientation()
+	local cf = CFrame.new(p0.p, p1.p)
+	local x2, y2, z2 = cf:ToOrientation()
+	local d = math.deg
+	if deg then
+		return Vector3.new(d(x1-x2), d(y1-y2), d(z1-z2))
+	else
+		return Vector3.new((x1-x2), (y1-y2), (z1-z2))
+	end
+end
+
+function getaimbotplrs()
+	plrsforaim = {}
+	for i, plr in pairs(plrs:GetChildren()) do
+		if plr.Character and plr.Character.Humanoid and plr.Character.Humanoid.Health > 0 and plr.Name ~= lplr.Name and plr.Character.Head then
+
+			if TeamBased == true then
+				if plr.Team.Name ~= lplr.Team.Name then
+					local cf = CFrame.new(game.Workspace.CurrentCamera.CFrame.p, plr.Character.Head.CFrame.p)
+					local r = Ray.new(cf, cf.LookVector * 10000)
+					local ign = {}
+					for i, v in pairs(plrs.LocalPlayer.Character:GetChildren()) do
+						if v:IsA("BasePart") then
+							table.insert(ign , v)
+						end
+					end
+					local obj = game.Workspace:FindPartOnRayWithIgnoreList(r, ign)
+					if obj.Parent == plr.Character and obj.Parent ~= lplr.Character then
+						table.insert(plrsforaim, obj)
+					end
+				end
+			else
+				local cf = CFrame.new(game.Workspace.CurrentCamera.CFrame.p, plr.Character.Head.CFrame.p)
+				local r = Ray.new(cf, cf.LookVector * 10000)
+				local ign = {}
+				for i, v in pairs(plrs.LocalPlayer.Character:GetChildren()) do
+					if v:IsA("BasePart") then
+						table.insert(ign , v)
+					end
+				end
+				local obj = game.Workspace:FindPartOnRayWithIgnoreList(r, ign)
+				if obj.Parent == plr.Character and obj.Parent ~= lplr.Character then
+					table.insert(plrsforaim, obj)
+				end
+			end
+
+
+		end
+	end
+end
+
+function aimat(part)
+	cam.CFrame = CFrame.new(cam.CFrame.p, part.CFrame.p)
+end
+function checkfov (part)
+	local fov = getfovxyz(game.Workspace.CurrentCamera.CFrame, part.CFrame)
+	local angle = math.abs(fov.X) + math.abs(fov.Y)
+	return angle
+end
+
+game:GetService("RunService").RenderStepped:Connect(function()
+	if aimatpart then
+		aimat(aimatpart)
+		if aimatpart.Parent == plrs.LocalPlayer.Character then
+			aimatpart = nil
+		end
+	end
+	end)
+
+	if switch == true then
+		local maxangle = 99999
+
+		print("Loop")
+		if true and raycast == false then
+			for i, plr in pairs(plrs:GetChildren()) do
+			if plr.Name ~= lplr.Name and plr.Character and plr.Character.Head and plr.Character.Humanoid and plr.Character.Humanoid.Health > 1 then
+					if TeamBased then
+						if plr.Team.Name ~= lplr.Team.Name or plr.Team.TeamColor ~= lplr.Team.TeamColor then
+							local an = checkfov(plr.Character.Head)
+							if an < maxangle then
+								maxangle = an
+								aimatpart = plr.Character.Head
+								if an < lockangle then
+									break
+								end
+							end
+						end
+					else
+						local an = checkfov(plr.Character.Head)
+							if an < maxangle then
+								maxangle = an
+								aimatpart = plr.Character.Head
+								if an < lockangle then
+									break
+							end
+						end
+					end
+
+
+
+
+				end
+			end
+
+		elseif raycast == true then
+
+		end
+
+		if raycast == true and switch == false and not aimatpart then
+			getaimbotplrs()
+			aimatpart = nil
+			local maxangle = 999
+			for i, v in ipairs(plrsforaim) do
+				if v.Parent ~= lplr.Character then
+					local an = checkfov(v)
+					if an < maxangle and v ~= lplr.Character.Head then
+						maxangle = an
+						aimatpart = v
+						print(v:GetFullName())
+						v.Parent.Humanoid.Died:connect(function()
+							aimatpart = nil
+						end)
+					end
+				end
+			end
+
+	end
+end
+delay(0, function()
+	while wait(espupdatetime) do
+		if autoesp == true then
+			pcall(function()
+			f.addesp()
+			end)
+		end
+	end
+end)
+
+
+local enticzhub = library.new("Enticz Hub 六")
+
+-- themes
+local themes = {
+Background = Color3.fromRGB(24, 24, 24),
+Glow = Color3.fromRGB(0, 234, 255),
+Accent = Color3.fromRGB(10, 10, 10),
+LightContrast = Color3.fromRGB(20, 20, 20),
+DarkContrast = Color3.fromRGB(14, 14, 14),  
+TextColor = Color3.fromRGB(0, 234, 255)
+}
+
+-- first page
+local Main = enticzhub:addPage("Main", 5012544693)
+local Main1 = Main:addSection("Main")
+local Main2 = Main:addSection("Other")
+local Main3 = Main:addSection("Protection")
+local Main4 = Main:addSection("Notice!")
+Main1:addSlider("Tele Speed 1 - 10,000", 300, 100, 10000, function(telespeed)
+            _G.TeleSpeed_Bind = "Q"
+					down = false
+					velocity = Instance.new("BodyVelocity")
+					velocity.maxForce = Vector3.new(10000000, 0, 20000000)
+										local speed = telespeed
+					gyro = Instance.new("BodyGyro")
+					gyro.maxTorque = Vector3.new(10000000, 0, 20000000)
+					local hum = game.Players.LocalPlayer.Character.Humanoid
+					function onButton1Down(mouse)
+						down = true
+						velocity.Parent = game.Players.LocalPlayer.Character.UpperTorso
+						velocity.velocity = (hum.MoveDirection) * speed
+						gyro.Parent = game.Players.LocalPlayer.Character.UpperTorso
+						while down do
+							if not down then
+								break
+							end
+							velocity.velocity = (hum.MoveDirection) * speed
+							local refpos = gyro.Parent.Position + (gyro.Parent.Position - workspace.CurrentCamera.CoordinateFrame.p).unit * 5
+							gyro.cframe = CFrame.new(gyro.Parent.Position, Vector3.new(refpos.x, gyro.Parent.Position.y, refpos.z))
+							wait(0.1)
+						end
+					end
+					function onButton1Up(mouse)
+						velocity.Parent = nil
+						gyro.Parent = nil
+						down = false
+					end
+					function onSelected(mouse)
+						mouse.KeyDown:connect(function(k)
+							if k:upper() == _G.TeleSpeed_Bind then
+								onButton1Down(mouse)
+							end
+						end)
+						mouse.KeyUp:connect(function(k)
+							if k:upper() == _G.TeleSpeed_Bind then
+								onButton1Up(mouse)
+							end
+						end)
+					end
+					onSelected(game.Players.LocalPlayer:GetMouse())
+end)
+
+Main1:addButton("Character Slot Changer", function()
+    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(workspace.FriendlyNPCs["Character Slot Changer"])
+end)
+
+Main1:addToggle("No Slow", nil, function(NoSlowT)
+		    if NoSlowT == true then
+						Slow = game:GetService('RunService').Stepped:Connect(function()
+							if game.Players.LocalPlayer.Character:FindFirstChild("Action") then
+								game.Players.LocalPlayer.Character:FindFirstChild("Action"):Destroy()
+							end
+							if game.Players.LocalPlayer.Character:FindFirstChild("Attacking") then
+								game.Players.LocalPlayer.Character:FindFirstChild("Attacking"):Destroy()
+							end
+							if game.Players.LocalPlayer.Character:FindFirstChild("Using") then
+								game.Players.LocalPlayer.Character:FindFirstChild("Using"):Destroy()
+							end
+							if game.Players.LocalPlayer.Character:FindFirstChild("hyper") then
+								game.Players.LocalPlayer.Character:FindFirstChild("hyper"):Destroy()
+							end
+							if game.Players.LocalPlayer.Character:FindFirstChild("Hyper") then
+								game.Players.LocalPlayer.Character:FindFirstChild("Hyper"):Destroy()
+							end
+							if game.Players.LocalPlayer.Character:FindFirstChild("heavy") then
+								game.Players.LocalPlayer.Character:FindFirstChild("heavy"):Destroy()
+							end
+							if game.Players.LocalPlayer.Character:FindFirstChild("KiBlasted") then
+								game.Players.LocalPlayer.Character:FindFirstChild("KiBlasted"):Destroy()
+							end
+							if game.Players.LocalPlayer.Character:FindFirstChild("Tele") then
+								game.Players.LocalPlayer.Character:FindFirstChild("Tele"):Destroy()
+							end
+							if game.Players.LocalPlayer.Character:FindFirstChild("tele") then
+								game.Players.LocalPlayer.Character:FindFirstChild("tele"):Destroy()
+							end
+							if game.Players.LocalPlayer.Character:FindFirstChild("Killed") then
+								game.Players.LocalPlayer.Character:FindFirstChild("Killed"):Destroy()
+							end
+							if game.Players.LocalPlayer.Character:FindFirstChild("Slow") then
+								game.Players.LocalPlayer.Character:FindFirstChild("Slow"):Destroy()
+							end
+						end)
+					else
+						Slow:Disconnect()
+					end
+		end)
+
+    Main1:addButton("Lock On [V]", function()
+end)
+
+Main2:addToggle("Noclip", nil, function(NoClipT)
+if NoClipT == true then
+Clip = game:GetService("RunService").RenderStepped:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end)
+else
+    Clip:Disconnect()
+end
+end)
+
+Main2:addToggle("Bean Spam", nil, function(BeanSpamT)
+    if BeanSpamT == true then
+        BeanSpamR = game:GetService("RunService").RenderStepped:connect(function()
+    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer(true)
+        end)
+else
+    BeanSpamR:Disconnect()
+    end
+end)
+
+RightClickT = true
+Main2:addToggle("Right Click", nil, function(RightClick)
+    if RightClick == true then
+        RightClick1 = true
+    						while RightClick1 == true do
+							wait(0.25)
+								game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer({
+									[1] = "m2"
+								}, CFrame.new(0, 0, 0), nil, false)
+							end
+    						else
+    						    RightClick1 = false
+    end
+end)
+
+Main2:addButton("TOP Respawn", function()
+      startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Top Respawn Active!",
+})
+Die = game.Players.LocalPlayer.Character
+lplr = game:GetService("Players").LocalPlayer
+
+   game:GetService("RunService").RenderStepped:connect(function()
+       if Die.Humanoid.Health == 1 then
+          game:GetService("Players").LocalPlayer.Character.SuperAction:Destroy()
+
+   wait(0.2)
+     game:GetService("TweenService"):Create(lplr.Character.HumanoidRootPart, TweenInfo.new(0.5, Enum.EasingStyle.Sine), {CFrame = CFrame.new(-196.093887, 335.289124, -33.2940483)}):Play()
+
+     end
+        end)
+end)
+
+
+
+Main2:addButton("Earth Instant Reset", function()
+    local args = {[1] = workspace.FriendlyNPCs:FindFirstChild("Hair Stylist")}
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(unpack(args))
+wait(.3)
+   local args = {[1] = {[1] = "Yes"}}
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(unpack(args))
+wait(.3)
+   local args = {[1] = "woah"}
+game:GetService("Players").LocalPlayer.Backpack.HairScript.RemoteEvent:FireServer(unpack(args))
+   local Player = game.Players.LocalPlayer
+end)
+
+Main2:addButton("Exp Freeze", function()
+     startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Exp is frozen, hard reset to unfreeze!",
+}
+     )repeat wait()
+ until game:IsLoaded()
+   game.Players.LocalPlayer.PlayerGui:WaitForChild("HUD")
+wait(1)
+function EnticzzLikesFemboys()
+     Plr = game:GetService('Players').LocalPlayer
+  game.Workspace.Live[Plr.Name].True:destroy()  
+end EnticzzLikesFemboys()
+end)
+
+
+Main2:addButton("ChatSpy", function()
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "ChatSpy Active",
+})
+enabled = false
+spyOnMyself = true
+public = false
+publicItalics = true
+privateProperties = {
+	Color = Color3.fromRGB(0,255,255); 
+	Font = Enum.Font.SourceSansBold;
+	TextSize = 18;
+}
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+local instance = (_G.chatSpyInstance or 0) + 1
+_G.chatSpyInstance = instance
+if _G.chatSpyInstance == instance then
+if p==player and msg:lower():sub(1,4)=="/spy" then
+enabled = not enabled
+wait(0.3)
+privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+elseif enabled and (spyOnMyself==true or p~=player) then
+msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+local hidden = true
+local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+hidden = false
+end
+end)
+wait(1)
+conn:Disconnect()
+if hidden and enabled then
+				if public then
+					saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+				else
+					privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+					StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+				end
+			end
+		end
+	end
+privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+local chatFrame = player.PlayerGui.Chat.Frame
+chatFrame.ChatChannelParentFrame.Visible = true
+chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+end)
+
+Main3:addToggle("GodMode Earth", nil, function(GodModeE)
+		         if GodModeE == true then
+						local God = game.Workspace.Touchy.Part
+						local Root = game.Players.LocalPlayer.Character.HumanoidRootPart
+						EGod = game:GetService("RunService").RenderStepped:Connect(function()
+							firetouchinterest(Root, God, 0)
+							firetouchinterest(Root, God, 1)
+							if game.Players.LocalPlayer.PlayerGui:FindFirstChild("Popup") then
+								game.Players.LocalPlayer.PlayerGui.Popup:Destroy()
+							end
+						end)
+					else
+						EGod:Disconnect()
+						if game.Players.LocalPlayer.PlayerGui:FindFirstChild("Popup") then
+							game.Players.LocalPlayer.PlayerGui.Popup:Destroy()
+						end
+					end
+			  end)
+
+
+Main3:addToggle("Ranked/HTC GodMode", nil, function(GodModeN)
+			            if GodModeN == true then
+game.Players.LocalPlayer.Character.Stats["Phys-Resist"]:Destroy()
+game.Players.LocalPlayer.Character.Stats["Ki-Resist"]:Destroy()
+					else
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+					end
+			    end)
+
+
+Main2:addButton("ChatSpy X", function()
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "ChatSpy X Active, you can now see all chats.",
+})
+--This script reveals ALL hidden messages in the default chat
+--chat "/spy" to toggle!
+enabled = true
+--if true will check your messages too
+spyOnMyself = false
+--if true will chat the logs publicly (fun, risky)
+public = false
+--if true will use /me to stand out
+publicItalics = true
+--customize private logs
+privateProperties = {
+	Color = Color3.fromRGB(0,255,255); 
+	Font = Enum.Font.SourceSansBold;
+	TextSize = 18;
+}
+--////////////////////////////////////////////////////////////////
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+local instance = (_G.chatSpyInstance or 0) + 1
+_G.chatSpyInstance = instance
+
+local function onChatted(p,msg)
+	if _G.chatSpyInstance == instance then
+		if p==player and msg:lower():sub(1,4)=="/spy" then
+			enabled = not enabled
+			wait(0.3)
+			privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+			StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+		elseif enabled and (spyOnMyself==true or p~=player) then
+			msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+			local hidden = true
+			local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+				if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+					hidden = false
+				end
+			end)
+			wait(1)
+			conn:Disconnect()
+			if hidden and enabled then
+				if public then
+					saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+				else
+					privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+					StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+				end
+			end
+		end
+	end
+end
+
+for _,p in ipairs(Players:GetPlayers()) do
+	p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+end
+Players.PlayerAdded:Connect(function(p)
+	p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+end)
+privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+local chatFrame = player.PlayerGui.Chat.Frame
+chatFrame.ChatChannelParentFrame.Visible = true
+chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+--Credit to O Plays on Youtube, go subscribe to him (not my account, just advertising for him, we don't even know eachother lol)
+end)
+
+Main3:addToggle("Anti Glitch", nil, function(AntiGlitchT)
+    if AntiGlitchT == true then
+game.Players.LocalPlayer.Character.Humanoid.Animator:Destroy()
+else
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    end
+    end)
+
+  Main3:addToggle("Anti Queue", nil, function(AntiqT)
+   if AntiqT == true then 
+
+ AntiQ = game:GetService('RunService').Stepped:Connect(function()
+ game.Workspace["Wormhole"].TouchInterest:Destroy()
+
+end)
+  else
+      AntiQ = Disconnect
+   game.Players.LocalPlayer.Character.Humanoid.Health = 0 
+end
+end)
+
+Main3:addButton("Anti Afk", function()
+for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+v:Disable()
+end
+end)
+
+
+Main4:addButton("More Features Coming Soon", function()
+end)
+
+
+local Character = enticzhub:addPage("Character", 5012544693)
+local Character1 = Character:addSection("Character Main")
+local Character2 = Character:addSection("Aura Forms")
+local Character3 = Character:addSection("Other")
+
+
+Character1:addButton("Remove Wings", function()
+    game:GetService("RunService").RenderStepped:connect(function()
+    game.Players.LocalPlayer.Character:FindFirstChild('RebirthWings').Handle:Destroy()
+    end)
+    end)
+
+    Character1:addButton("Remove Halo", function()
+      game:GetService("RunService").RenderStepped:connect(function()
+     game.Players.LocalPlayer.Character:FindFirstChild('RealHalo').Handle:Destroy()
+    end)
+   end)
+
+   Character1:addButton("Remove Level", function()
+    game:GetService("RunService").RenderStepped:connect(function()
+    game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model"):Destroy()
+    end)
+    end)
+
+    Character2:addButton("Super Dragon Fist Aura", function()
+						local Players = game:GetService("Players")
+						local player = Players:FindFirstChildOfClass("Player")
+						if Players:FindFirstChildOfClass("Player") and player.Character then
+							local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+							if humanoid then
+								local tool = game.Players.LocalPlayer.Backpack:FindFirstChild("Super Dragon Fist")
+								if tool then
+									humanoid:EquipTool(tool)
+								end
+							end
+						end
+						wait(0.5)
+						if game.Players.LocalPlayer.Character:FindFirstChild("Super Dragon Fist") then
+							game.Players.LocalPlayer.Character["Super Dragon Fist"].Activator.Forward:Destroy()
+						end
+end)
+Character2:addButton("Super Rush Aura", function()
+						local Players = game:GetService("Players")
+						local player = Players:FindFirstChildOfClass("Player")
+						if Players:FindFirstChildOfClass("Player") and player.Character then
+							local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+							if humanoid then
+								local tool = game.Players.LocalPlayer.Backpack:FindFirstChild("Super Rush")
+								if tool then
+									humanoid:EquipTool(tool)
+								end
+							end
+						end
+						wait(0.5)
+						if game.Players.LocalPlayer.Character:FindFirstChild("Super Rush") then
+							game.Players.LocalPlayer.Character["Super Rush"].Activator.Forward:Destroy()
+						end
+end)
+Character2:addButton("Kaioken Assault Aura", function()
+    						local Players = game:GetService("Players")
+						local player = Players:FindFirstChildOfClass("Player")
+						if Players:FindFirstChildOfClass("Player") and player.Character then
+							local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+							if humanoid then
+								local tool = game.Players.LocalPlayer.Backpack:FindFirstChild("Kaioken Assault")
+								if tool then
+									humanoid:EquipTool(tool)
+								end
+							end
+						end
+						wait(0.5)
+						if game.Players.LocalPlayer.Character:FindFirstChild("Kaioken Assault") then
+							game.Players.LocalPlayer.Character["Kaioken Assault"].Activator.Forward:Destroy()
+						end
+end)
+Character2:addButton("Wrathful Charge Aura", function()
+						local Players = game:GetService("Players")
+						local player = Players:FindFirstChildOfClass("Player")
+						if Players:FindFirstChildOfClass("Player") and player.Character then
+							local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+							if humanoid then
+								local tool = game.Players.LocalPlayer.Backpack:FindFirstChild("Wrathful Charge")
+								if tool then
+									humanoid:EquipTool(tool)
+								end
+							end
+						end
+						wait(0.5)
+						if game.Players.LocalPlayer.Character:FindFirstChild("Wrathful Charge") then
+							game.Players.LocalPlayer.Character["Wrathful Charge"].Activator.Forward:Destroy()
+end
+end)
+
+Character3:addButton("Beerus Animation", function()
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "You are now Beerus??!, Hard reset to unbeerus lol wtf...",
+})
+ 
+ 
+      player = game.Players.LocalPlayer while wait() do
+if game.Workspace.Live[player.Name].Animate.idle:FindFirstChild("Animation1") then
+   game.Workspace.Live[player.Name].Animate.idle:FindFirstChild("Animation1").AnimationId = "rbxassetid://1171558651"
+if game.Workspace.Live[player.Name].Animate.walk:FindFirstChild("RunAnim") then
+game.Workspace.Live[player.Name].Animate.walk:FindFirstChild("RunAnim").AnimationId = "rbxassetid://1171558651"
+end end end
+    local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local Animate 
+local Humanoid = player.Character:FindFirstChild('Humanoid')
+mouse.KeyDown:Connect(function(Key) 
+ if Key == "w" then
+  local Animation = Instance.new("Animation", player.Character)
+  Animation.AnimationId = "rbxassetid://1171558651"
+  Animate = Humanoid:LoadAnimation(Animation)
+  Animate:Play()
+end
+end)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Enticz Cmds";
+            Text = "Beerus Animation Loaded";
+        })
+    end)
+
+Character3:addButton("Aura Remove", function()
+ for i,v in pairs(game.Players.LocalPlayer.Character.HumanoidRootPart:GetChildren()) do 
+if v.Name:find("Aura") or v.Name:find("Trail") or v.Name:find("SaiyanLoop") or v.Name:find("Lightning") then 
+v:Destroy() 
+end end
+end)
+
+
+local Visuals = enticzhub:addPage("Visuals", 5012544693)
+local Visuals1 = Visuals:addSection("Visuals")
+
+Visuals1:addSlider("FOV", 70, 1, 120, function(FOV)
+    game.Workspace.Camera.FieldOfView = FOV
+end)
+Visuals1:addSlider("Saturation", 25, -25, 0, function(Saturation)
+    game.Lighting.ColorCorrection.Saturation = Saturation
+end)
+Visuals1:addToggle("Drugs", nil, function(Drugs)
+        _G.high = true
+					if Drugs == true then
+						while _G.high do
+							game:GetService("TweenService"):Create(game.Workspace.CurrentCamera, TweenInfo.new(1.1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+								FieldOfView = 120
+							}):Play()
+							game:GetService("TweenService"):Create(game:GetService("Lighting").ColorCorrection, TweenInfo.new(1.8, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+								Saturation = 35
+							}):Play()
+							wait(1.1)
+							game:GetService("TweenService"):Create(game.Workspace.CurrentCamera, TweenInfo.new(1.1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+								FieldOfView = 50
+							}):Play()
+							game:GetService("TweenService"):Create(game:GetService("Lighting").ColorCorrection, TweenInfo.new(1.8, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {
+								Saturation = -35
+							}):Play()
+							wait(1.1)
+						end
+					else
+						_G.high = false
+						wait(3)
+						game.Workspace.Camera.FieldOfView = 70
+						game.Lighting.ColorCorrection.Saturation = 0.2;
+					end
+end)
+Visuals1:addToggle("FullBright", nil, function(FullBright)
+        					if FullBright == true then
+						FB = game:GetService("RunService").RenderStepped:Connect(function()
+							game.Lighting.FogEnd = (99999999)
+						end)
+					else
+						FB:Disconnect()
+						game.Lighting.FogEnd = (2000)
+					end
+    end)
+Visuals1:addToggle("First Person", nil, function(FirstPerson)
+			    					if FirstPerson == true then
+						game.Players.LocalPlayer.CameraMaxZoomDistance = 0.5
+						game.Players.LocalPlayer.Character.Humanoid.CameraOffset = Vector3.new(0, 0, -1)
+						for childIndex, child in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+							if child:IsA("BasePart") and child.Name ~= "Head" then
+								child:GetPropertyChangedSignal("LocalTransparencyModifier"):Connect(function()
+									child.LocalTransparencyModifier = child.Transparency
+								end)
+							end
+						end
+					else
+						game.Players.LocalPlayer.CameraMaxZoomDistance = 20;
+						game.Players.LocalPlayer.Character.Humanoid.CameraOffset = Vector3.new(2, 2, 0);
+    					end
+end)
+
+Visuals1:addToggle("ESP", nil, function(ESPT)
+			    if ESPT == true then
+    backupesp1 = game:GetService("Players").LocalPlayer.NameDisplayDistance
+backupesp2 = game:GetService("Players").LocalPlayer.HealthDisplayDistance
+    local Holder = Instance.new("Folder", game.CoreGui)
+Holder.Name = "ESP"
+
+local UpdateFuncs = {}
+
+local Box = Instance.new("BoxHandleAdornment")
+Box.Name = "nilBox"
+Box.Size = Vector3.new(4, 7, 4)
+Box.Color3 = Color3.new(100 / 255, 100 / 255, 100 / 255)
+Box.Transparency = 0.7
+Box.ZIndex = 0
+Box.AlwaysOnTop = true
+Box.Visible = true
+
+local NameTag = Instance.new("BillboardGui")
+NameTag.Name = "nilNameTag"
+NameTag.Enabled = false
+NameTag.Size = UDim2.new(0, 200, 0, 50)
+NameTag.AlwaysOnTop = true
+NameTag.StudsOffset = Vector3.new(0, 1.8, 0)
+local Tag = Instance.new("TextLabel", NameTag)
+Tag.Name = "Tag"
+Tag.BackgroundTransparency = 1
+Tag.Position = UDim2.new(0, -50, 0, 0)
+Tag.Size = UDim2.new(0, 300, 0, 20)
+Tag.TextSize = 20
+Tag.TextColor3 = Color3.new(100 / 255, 100 / 255, 100 / 255)
+Tag.TextStrokeColor3 = Color3.new(0 / 255, 0 / 255, 0 / 255)
+Tag.TextStrokeTransparency = 0.4
+Tag.Text = "nil"
+Tag.Font = Enum.Font.SourceSansBold
+Tag.TextScaled = false
+
+local LoadCharacter = function(v)
+	repeat wait() until v.Character ~= nil
+	v.Character:WaitForChild("Humanoid")
+	local vHolder = Holder:FindFirstChild(v.Name)
+	vHolder:ClearAllChildren()
+	local b = Box:Clone()
+	b.Name = v.Name .. "Box"
+	b.Adornee = v.Character
+	b.Parent = vHolder
+	local t = NameTag:Clone()
+	t.Name = v.Name .. "NameTag"
+	t.Enabled = true
+	t.Parent = vHolder
+	t.Adornee = v.Character:WaitForChild("Head", 5)
+	if not t.Adornee then
+		return UnloadCharacter(v)
+	end
+	t.Tag.Text = v.Name
+	b.Color3 = Color3.new(v.TeamColor.r, v.TeamColor.g, v.TeamColor.b)
+	t.Tag.TextColor3 = Color3.new(v.TeamColor.r, v.TeamColor.g, v.TeamColor.b)
+	local UpdateNameTag = function()
+		if not pcall(function()
+			--v.Character.Humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+			local maxh = math.floor(v.Character.Humanoid.MaxHealth)
+			local h = math.floor(v.Character.Humanoid.Health)
+			t.Tag.Text = v.Name .. "\n" .. ((maxh ~= 0 and tostring(math.floor((h / maxh) * 100))) or "0") .. "%  " .. tostring(h) .. "/" .. tostring(maxh)
+		end) then
+			UpdateFuncs[v] = nil
+		end
+	end
+	UpdateNameTag()
+	UpdateFuncs[v] = UpdateNameTag
+end
+
+local UnloadCharacter = function(v)
+	local vHolder = Holder:FindFirstChild(v.Name)
+	if vHolder and (vHolder:FindFirstChild(v.Name .. "Box") ~= nil or vHolder:FindFirstChild(v.Name .. "NameTag") ~= nil) then
+		vHolder:ClearAllChildren()
+	end
+end
+
+local LoadPlayer = function(v)
+	local vHolder = Instance.new("Folder", Holder)
+	vHolder.Name = v.Name
+	v.CharacterAdded:Connect(function()
+		pcall(LoadCharacter, v)
+	end)
+	v.CharacterRemoving:Connect(function()
+		pcall(UnloadCharacter, v)
+	end)
+	LoadCharacter(v)
+end
+
+local UnloadPlayer = function(v)
+	UnloadCharacter(v)
+	local vHolder = Holder:FindFirstChild(v.Name)
+	if vHolder then
+		vHolder:Destroy()
+	end
+end
+
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+	spawn(function() pcall(LoadPlayer, v) end)
+end
+
+game:GetService("Players").PlayerAdded:Connect(function(v)
+	pcall(LoadPlayer, v)
+end)
+
+game:GetService("Players").PlayerRemoving:Connect(function(v)
+	pcall(UnloadPlayer, v)
+end)
+
+game.ItemChanged:Connect(function(i, v)
+	if i:IsA("Player") and v == "TeamColor" then
+		if Holder:FindFirstChild(i.Name) then
+			UnloadCharacter(i)
+			wait()
+			LoadCharacter(i)
+		end
+	elseif i:IsA("Humanoid") and i.Parent then
+		local p = game:GetService("Players"):GetPlayerFromCharacter(i.Parent)
+		if p and Holder:FindFirstChild(p.Name) then
+			UpdateFuncs[p]()
+		end
+	end
+end)
+game:GetService("Players").LocalPlayer.NameDisplayDistance = 0
+game:GetService("Players").LocalPlayer.HealthDisplayDistance = 0
+else
+    game:GetService("CoreGui").ESP:Destroy()
+game:GetService("Players").LocalPlayer.NameDisplayDistance = backupesp1
+game:GetService("Players").LocalPlayer.HealthDisplayDistance = backupesp2
+    end
+			end)
+
+
+local Waypoint = enticzhub:addPage("Teleports", 5012544693)
+local Waypoint7 = Waypoint:addSection("World Tps")
+local Waypoint1 = Waypoint:addSection("Earth Cities")
+local Waypoint2 = Waypoint:addSection("Earth Shops")
+local Waypoint3 = Waypoint:addSection("Other Useful Tp's")
+
+-- Tween Var
+plr = game.Players.LocalPlayer
+live = workspace.Live
+ti = TweenInfo.new(1.2, Enum.EasingStyle.Sine)
+tx = TweenInfo.new(0.9, Enum.EasingStyle.Exponential)
+tk = TweenInfo.new(0.5, Enum.EasingStyle.Exponential)
+tj = TweenInfo.new(1, Enum.EasingStyle.Sine)
+-- Tween Var end
+
+Waypoint7:addButton("Earth", function()
+teleport:Teleport(Earth)
+end)
+
+Waypoint7:addButton("Namek", function()
+teleport:Teleport(Namek)
+end)
+
+Waypoint7:addButton("Space", function()
+teleport:Teleport(Space)
+end)
+
+Waypoint7:addButton("Future", function()
+teleport:Teleport(Future)
+end)
+
+Waypoint7:addButton("Zaros", function()
+teleport:Teleport(Zaros)
+end)
+
+Waypoint7:addButton("Secret", function()
+teleport:Teleport(Secret)
+end)
+
+Waypoint7:addButton("Queue", function()
+teleport:Teleport(Queue)
+end)
+
+Waypoint7:addButton("Heaven", function()
+teleport:Teleport(Heaven)
+end)
+
+Waypoint7:addButton("HTC", function()
+teleport:Teleport(HTC)
+end)
+
+Waypoint1:addButton("South City", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-456.571716, 28.5875511, -6412.57373)}):Play() --Tp's You to South City
+end)
+
+Waypoint1:addButton("West City", function()
+   ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-570.729919, 23.2874756, -2884.24707)}):Play() --Tp's You to West City
+end)
+
+Waypoint1:addButton("Central City", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-3834.32837, 23.2875633, -1427.96899)}):Play() --Tp's You to Central City
+end)
+
+Waypoint1:addButton("Satan City", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-5790, 140.287689, -2747)}):Play() --Tp's You to Satan City
+end)
+
+Waypoint2:addButton("Korins Bean Shop", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-3897.54932, 24.2900181, -2043.68091)}):Play() --Tp's You to Korins Bean Shop
+end)
+
+Waypoint2:addButton("Whis's Shop", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-3727.14038, 24.2877941, -1228.64685)}):Play() --Tp's You to Whis's shop
+end)
+
+Waypoint2:addButton("Hercule's Shop", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-3014.20728, 24.0925579, -1565.15698)}):Play() --Tp's You to Hercule's shop
+end)
+
+Waypoint2:addButton("Elder Kai's Shop", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-3015.85547, 24.2875423, -1904.08069)}):Play() --Tp's You to Elder Kai's shop
+end)
+
+Waypoint2:addButton("Hair Stylist", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-189.98381, 26.446579, -6422.45361)}):Play() --Tp's You to the hair stylist's shop
+end)
+
+Waypoint3:addButton("West 1v1", function()
+ ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(45.9248962, 21.2874985, -2384.07471)}):Play() --Tp's You to West City 1v1
+end)
+
+ Waypoint3:addButton("South 1v1", function()
+ ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-174.812622, 24.2874947, -6725.3623)}):Play() --Tp's You to South City 1v1
+end)
+
+Waypoint3:addButton("Future 1v1", function()
+ ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(3601.84546, -92.1488647, 1977.94543)}):Play() --Tp's You to South City 1v1
+end)
+
+Waypoint3:addButton("Secret World 1v1", function()
+ ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-1296.65906, 22.3469143, -2146.48535)}):Play() --Tp's You to South City 1v1
+end)
+
+Waypoint3:addButton("Lookout", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(2301.67163, 3945.10449, -2274.34033)}):Play()
+end)
+
+Waypoint3:addButton("Chi Chi's House", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-5946.94971, 22.4876595, -4229.66455)}):Play()
+    end)
+
+Waypoint3:addButton("Saiyans", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(613.55896, 177.112396, 114.378334)}):Play()
+end)
+
+Waypoint3:addButton("Zaros Shop", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(636.860718, 106.899757, 3937.83618)}):Play()
+    end)
+
+Waypoint3:addButton("Cell Arena (Earth)", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(-1003.3598, 28.2966881, -855.309143)}):Play()
+end)
+
+Waypoint3:addButton("Earth Broly Pad", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(2724.93506, 3945.10522, -2273.66577)}):Play()
+end)
+
+Waypoint3:addButton("Heaven Quests", function()
+    ts:Create(live[plr.Name].HumanoidRootPart, ti, {CFrame = CFrame.new(968.027283, 22.2999935, 1526.45691)}):Play()
+    end)
+
+
+local Shop = enticzhub:addPage("Shop", 5012544693)
+local AutoBeanBuy = Shop:addSection("Auto Bean Buy")
+local AutoJarsBuy = Shop:addSection("Auto Jars Buy")
+local Others1 = Shop:addSection("Others")
+local PrestigeForm1 = Shop:addSection("Saiyan Forms")
+local PrestigeForm2 = Shop:addSection("Jiren Forms")
+local PrestigeForm3 = Shop:addSection("Human Forms")
+local PrestigeForm4 = Shop:addSection("Frieza Forms")
+local PrestigeForm5 = Shop:addSection("Majin Forms")
+
+
+    _G.BeansJarsColor = {
+	[1] = "Red"
+}
+AutoBeanBuy:addDropdown("Type Of Beans", {"Red", "Blue", "Yellow", "Green"}, function(ColorOfBeans)
+    _G.BeansJarsColor = {
+	[1] = ColorOfBeans
+}
+end)
+		AutoBeanBuy:addToggle("Start", nil, function(AutoBuyBeans)
+		    AutoBuyBeansT = AutoBuyBeans
+local ohInstance1 = workspace.FriendlyNPCs["Korin BEANS"]
+local ohTable1 = {
+	[1] = "k"
+}
+local ohTable3 = {
+	[1] = "80"
+}
+local ohTable5 = {
+	[1] = "Yes"
+}
+repeat wait() if AutoBuyBeansT == true then
+                _G.BeansJars = {
+	[1] = "Beans"
+}
+Zenni = tonumber((string.gsub((game.Players.LocalPlayer.PlayerGui.HUD.FullSize.Money.Text:sub(2)),",","")))
+if Zenni >= 25000 then
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(ohInstance1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(_G.BeansJars)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable3)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(_G.BeansJarsColor)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable5)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+end
+end
+until Zenni <= 25000 or AutoBuyBeansT == false
+		    end)
+
+AutoJarsBuy:addDropdown("Type Of Jars", {"Red", "Blue", "Yellow", "Green"}, function(TypeOfJars)
+    _G.BeansJarsColor = {
+	[1] = TypeOfJars
+}
+end)
+		AutoJarsBuy:addToggle("Start", nil, function(AutoBuyJars)
+		    		    AutoBuyJarsT = AutoBuyJars
+		    		    local ohInstance1 = workspace.FriendlyNPCs["Korin BEANS"]
+local ohTable1 = {
+	[1] = "k"
+}
+local ohTable3 = {
+	[1] = "80"
+}
+local ohTable5 = {
+	[1] = "Yes"
+}
+repeat wait() if AutoBuyJarsT == true then
+                _G.BeansJars = {
+	[1] = "Jars"
+}
+Zenni = tonumber((string.gsub((game.Players.LocalPlayer.PlayerGui.HUD.FullSize.Money.Text:sub(2)),",","")))
+if Zenni >= 40000 then
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(ohInstance1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(_G.BeansJars)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable3)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(_G.BeansJarsColor)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable5)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable1)
+wait(0.3)
+end
+end
+until Zenni <= 40000 or AutoBuyJarsT == false
+		end)
+		
+				Others1:addToggle("Auto Elder Kai", nil, function(ElderKaiT)
+				        ElderKaiTT = ElderKaiT
+    local ohInstance11 = workspace.FriendlyNPCs["Elder Kai"]
+local ohTable11 = {
+	[1] = "k"
+}
+local ohTable22 = {
+	[1] = "Yes"
+}
+    repeat wait() if ElderKaiTT == true then
+    Zenni = tonumber((string.gsub((game.Players.LocalPlayer.PlayerGui.HUD.FullSize.Money.Text:sub(2)),",","")))
+if Zenni >= 10000 then
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(ohInstance11)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable11)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable22)
+wait(0.3)
+game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer(ohTable11)
+wait(0.3)
+end
+end
+until ElderKaiTT == false
+				end)
+			    Others1:addButton("Aqua Gi", function()
+			            game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(workspace.FriendlyNPCs["Aqua Gi"])
+end)
+			    Others1:addButton("TC Armor", function()
+			            game:GetService("Players").LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(workspace.FriendlyNPCs["TC Armor"])
+end)
+
+PrestigeForm1:addButton("SSJ4", function()
+    local Buy = "SSJ4"
+local Remote = game:GetService("ReplicatedStorage").AttemptBuy
+Remote:InvokeServer(Buy)
+end)
+
+PrestigeForm1:addButton("Complete Super Saiyan Blue", function()
+    local Buy = "CSSJB"
+local Remote = game:GetService("ReplicatedStorage").AttemptBuy
+Remote:InvokeServer(Buy)
+end)
+
+PrestigeForm2:addButton("Despair", function()
+    local Buy = "Despair"
+local Remote = game:GetService("ReplicatedStorage").AttemptBuy
+Remote:InvokeServer(Buy)
+end)
+
+PrestigeForm3:addButton("KaioKenx100", function()
+    local Buy = "KaioKenx100"
+local Remote = game:GetService("ReplicatedStorage").AttemptBuy
+Remote:InvokeServer(Buy)
+end)
+
+PrestigeForm3:addButton("Dark Human", function()
+    local Buy = "Dark Human"
+local Remote = game:GetService("ReplicatedStorage").AttemptBuy
+Remote:InvokeServer(Buy)
+end)
+
+PrestigeForm4:addButton("Cooler Form", function()
+    local Buy = "Cooler Form"
+local Remote = game:GetService("ReplicatedStorage").AttemptBuy
+Remote:InvokeServer(Buy)
+end)
+
+PrestigeForm4:addButton("Golden Cooler", function()
+    local Buy = "Golden Cooler"
+local Remote = game:GetService("ReplicatedStorage").AttemptBuy
+Remote:InvokeServer(Buy)
+end)
+
+PrestigeForm5:addButton("Dark Majin", function()
+    local Buy = "Dark Majin"
+local Remote = game:GetService("ReplicatedStorage").AttemptBuy
+Remote:InvokeServer(Buy)
+end)
+
+PrestigeForm5:addButton("Unstable", function()
+    local Buy = "Unstable"
+local Remote = game:GetService("ReplicatedStorage").AttemptBuy
+Remote:InvokeServer(Buy)
+end)
+
+    local Other = enticzhub:addPage("Useful", 5012544693)
+local Other1 = Other:addSection("Grabs/Freezes")
+local Other2 = Other:addSection("Movespams")
+local Other3 = Other:addSection("Extras")
+
+Other1:addButton("Dragon Crush Grab", function()
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Press u to use. Don't miss retard, hard reset to ungay...",
+})
+local plr = game:GetService("Players").LocalPlayer
+local mouse = plr:GetMouse()
+
+mouse.KeyDown:connect(function(key)
+    if key == "u" then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+game.Players.LocalPlayer.Character["Dragon Crush"]:Activate()
+game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+end
+end)
+end)
+
+    
+    local plr = game:GetService("Players").LocalPlayer
+local mouse = plr:GetMouse()
+
+Other1:addButton("Dragon Crush Grab Rejoin", function()
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Freeze ON       U = Grab      I = Rj",
+})
+local plr = game:GetService("Players").LocalPlayer
+local mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+    if key == "u" then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+game.Players.LocalPlayer.Character["Dragon Crush"]:Activate()
+game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+end
+end)
+mouse.KeyDown:connect(function(key)
+if key == "i" then
+    game:service('TeleportService'):Teleport(game.PlaceId)
+
+end
+end)
+end)
+
+Other2:addButton("Grab Movespam", function()
+    startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Press O to use Grab and P to activate and deactivate movespam...",
+})
+local plr = game:GetService("Players").LocalPlayer
+local mouse = plr:GetMouse()
+
+mouse.KeyDown:connect(function(key)
+    if key == "o" then
+game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+game.Players.LocalPlayer.Character["Dragon Crush"]:Activate()
+game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+end
+end)
+MoveSpamBind = "p"
+Moves =  {"Demon Flash", 
+        "Neo Wolf Fang Fist", 
+        "Flash Skewer", 
+        "Sweep Kick", 
+        "Burning Blast", 
+        "TS Molotov", 
+        "Blaster Meteor", 
+        "Anger Rush", 
+        "Meteor Crash", 
+        "Big Bang Kamehameha"}
+
+local baka = game:GetService("Players").LocalPlayer
+local mouse = baka:GetMouse()
+_G.Toggle = false
+
+mouse.KeyDown:Connect(function(Key)
+    if Key == MoveSpamBind then
+        if not _G.Toggle then
+            _G.Toggle = true
+            while _G.Toggle == true do
+                wait()
+                for i, v in pairs(baka.Backpack:GetChildren()) do
+                       if table.find( Moves, v.Name) then
+                               v.Parent = baka.Character
+                               v:Activate()
+                               wait(0.1)
+                               v:Deactivate()
+                               v.Parent = baka.Backpack
+                          end 
+                    end
+               end
+        else
+            _G.Toggle = false
+        end
+    end
+end) 
+end)
+
+Other2:addButton("Movespam",function()
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Movespam on, press [ to Activate and Deactivate...",
+})
+MoveSpamBind = "["
+Moves =  {"Demon Flash", 
+        "Neo Wolf Fang Fist", 
+        "Flash Skewer", 
+        "Sweep Kick", 
+        "Burning Blast", 
+        "TS Molotov", 
+        "Blaster Meteor", 
+        "Anger Rush", 
+        "Meteor Crash", 
+        "Big Bang Kamehameha"}
+
+local baka = game:GetService("Players").LocalPlayer
+local mouse = baka:GetMouse()
+_G.Toggle = false
+
+mouse.KeyDown:Connect(function(Key)
+    if Key == MoveSpamBind then
+        if not _G.Toggle then
+            _G.Toggle = true
+            while _G.Toggle == true do
+                wait()
+                for i, v in pairs(baka.Backpack:GetChildren()) do
+                       if table.find( Moves, v.Name) then
+                               v.Parent = baka.Character
+                               v:Activate()
+                               wait(0.1)
+                               v:Deactivate()
+                               v.Parent = baka.Backpack
+                          end 
+                    end
+               end
+        else
+            _G.Toggle = false
+        end
+    end
+end)
+end)
+
+Other2:addButton("Movespam (full melee)",function()
+startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Movespam on, press [ to Activate and Deactivate...",
+})
+MoveSpamBind = "]"
+Moves =  {"Strong Kick", 
+        "Neo Wolf Fang Fist", 
+        "Flash Skewer", 
+        "Sweep Kick", 
+        "Kick Barrage", 
+        "TS Molotov", 
+        "Blaster Meteor", 
+        "Anger Rush", 
+        "Meteor Crash", 
+        "God Slicer"}
+
+local baka = game:GetService("Players").LocalPlayer
+local mouse = baka:GetMouse()
+_G.Toggle = false
+
+mouse.KeyDown:Connect(function(Key)
+    if Key == MoveSpamBind then
+        if not _G.Toggle then
+            _G.Toggle = true
+            while _G.Toggle == true do
+                wait()
+                for i, v in pairs(baka.Backpack:GetChildren()) do
+                       if table.find( Moves, v.Name) then
+                               v.Parent = baka.Character
+                               v:Activate()
+                               wait(0.1)
+                               v:Deactivate()
+                               v.Parent = baka.Backpack
+                          end 
+                    end
+               end
+        else
+            _G.Toggle = false
+        end
+    end
+end)
+end)
+
+Other3:addButton("Invis", function()
+      startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "you are now invis, hard reset to become vis...",
+})
+      local lplr = game.Players.LocalPlayer  
+      Players = game.Players.LocalPlayer.Character
+        Character = game.Players.LocalPlayer
+        
+        Players.Humanoid:EquipTool(Character.Backpack["Flash Strike"])
+           Players["Flash Strike"]:Activate()
+       lplr.Character["Flash Strike"].Activator.Animation:Destroy()
+end)
+
+
+Other3:addButton("Queue Kick", function()
+         startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Press U on somebody to kick",
+})
+    mouse.KeyDown:connect(function(key)
+    if key == "u" then
+    game.Workspace["Wormhole"].TouchInterest:Destroy()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EnticzDBFS/d/e69172e83e4956f9ef89d28417eccf50329b6f67/queue%20kick'))()
+    end
+    end)
+    end)
+
+   local AutoFarm = enticzhub:addPage("AutoFarm", 5012544693)
+local AutoFarm1 = AutoFarm:addSection("Auto Brolys")
+local AutoFarm2 = AutoFarm:addSection("Auto Tops")
+local AutoFarm3 = AutoFarm:addSection("Extras")
+
+AutoFarm1:addButton("Ent Auto Broly (All Race)", function()
+             startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Ent Autobroly, a remake",
+})
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Xenfias/tsiLetihW/main/Autobroly(AR)'))()
+end)
+
+AutoFarm1:addButton("Ent Auto Broly (Android)", function()
+             startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Ent Autobroly, a remake",
+})
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Xenfias/tsiLetihW/main/Autobroly(Droid)'))()
+end)
+
+AutoFarm1:addButton("Auto Broly (Android)", function()
+          startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "Credits To NabilDR",
+})
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EnticzDBFS/d/a043462adcad682c598c80b80a2025da4a5ca77f/high%20prestige%20autobroly'))()
+end)
+
+AutoFarm1:addButton("Auto Broly (Jiren)", function()
+                startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "NOT MADE BY ME, all credits to creep *USE HATE*",
+})
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EnticzDBFS/d/38790bc477c8721b1678d5360bcda331e7801af6/Jiren%20Autobroly'))()
+    end)
+
+AutoFarm1:addButton("Auto Broly (Saiyan", function()
+                startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "NOT MADE BY ME, all credits to creep *USE SSJBKKX10*",
+})
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EnticzDBFS/d/d29d18a37215b38e998725b80114064fe5501ebe/Saiyan%20Autobroly'))()
+end)
+
+AutoFarm2:addButton("Auto Top", function()
+           startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "You must have another account inside of the top with you for this to work! (not made by me)",
+})
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EnticzDBFS/d/b6ffda844d9b56310ccda23fa549592f91edce61/AutoTop'))() --autotop
+   end)
+    
+AutoFarm2:addButton("Android AutoTop", function()
+              startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "You must have another account inside of the top with you for this to work! (not made by me)",
+})
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EnticzDBFS/d/96f51e15d97f5d7bc2e6b3ac56c2ae076fcc89e7/autotop%20android'))()
+   end)
+
+AutoFarm3:addButton("Auto Wish (zenni)", function()
+                  startGui:SetCore('SendNotification',{
+Title = "Enticz cmds",
+Text = "AutoWish Active",
+})
+    AutoWish = 'Zenni'
+
+if AutoWish == 'Zenni' or AutoWish == 'zenni' then
+  loadstring(game:HttpGet("https://shuko.000webhostapp.com/Zenni", true))()
+   elseif AutoWish == 'Exp' or AutoWish == 'exp' then
+    loadstring(game:HttpGet("https://shuko.000webhostapp.com/Exp", true))()
+     elseif AutoWish == 'Level Cap' or AutoWish == 'level cap' then
+      loadstring(game:HttpGet("https://shuko.000webhostapp.com/Level%20Cap", true))()
+end warn('Debugging')
+end)
+
+    local StatChecker = enticzhub:addPage("Stat Checker", 5012544693)
+local StatChecker1 = StatChecker:addSection("Stat Checker")
+StatChecker1:addTextbox("Target Name", "", function(Target, focusLost)
+    game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["2"].Button.Textbox.Text = game.Workspace.Live[Target].Race.Value 
+    game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["3"].Button.Textbox.Text = game.Workspace.Live[Target].Stats["Health-Max"].Value
+    game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["4"].Button.Textbox.Text = game.Workspace.Live[Target].Stats["Ki-Max"].Value
+    game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["5"].Button.Textbox.Text = game.Workspace.Live[Target].Stats["Phys-Damage"].Value
+    game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["6"].Button.Textbox.Text = game.Workspace.Live[Target].Stats["Ki-Damage"].Value
+    game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["7"].Button.Textbox.Text = game.Workspace.Live[Target].Stats["Phys-Resist"].Value
+    game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["8"].Button.Textbox.Text = game.Workspace.Live[Target].Stats["Ki-Resist"].Value
+    game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["9"].Button.Textbox.Text = game.Workspace.Live[Target].Stats["Speed"].Value
+    						if game:GetService("Workspace").Live[Target]:FindFirstChild("RebirthWings") then
+    						    game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["10"].Button.Textbox.Text = "Rebirth"
+						elseif game:GetService("Workspace").Live[Target]:FindFirstChild("RealHalo") then
+						game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["10"].Button.Textbox.Text = "Heaven"
+						else
+						        game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["10"].Button.Textbox.Text = "Pure"
+						end
+    game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container["2"].Button.Textbox.Text = ExtraThing
+end)
+StatChecker1:addTextbox("1. Race:", "", function(Health, focusLost)
+end)
+StatChecker1:addTextbox("2. Health Max:", "", function(Health, focusLost)
+end)
+StatChecker1:addTextbox("3. Ki Max:", "", function(Ki, focusLost)
+end)
+StatChecker1:addTextbox("4. Melee Damage:", "", function(MeleeDmg, focusLost)
+end)
+StatChecker1:addTextbox("5. Ki Damage:", "", function(KiDmg, focusLost)
+end)
+StatChecker1:addTextbox("6. Melee Resistance:", "", function(MeleeRes, focusLost)
+end)
+StatChecker1:addTextbox("7. Ki Resistance:", "", function(KiRes, focusLost)
+end)
+StatChecker1:addTextbox("8. Speed:", "", function(Speed, focusLost)
+end)
+StatChecker1:addTextbox("9. Extra:", "", function(Extra, focusLost)
+end)
+statcheckthing = 1
+for i, v in pairs(game.CoreGui["Enticz Hub 六"].Main["Stat Checker"]["Stat Checker"].Container:GetDescendants()) do
+if v:IsA("ImageButton") then
+    v.Name = statcheckthing
+    statcheckthing = statcheckthing + 1
+end
+end
+
+local Settings = enticzhub:addPage("Settings", 5012544693)
+local Settings1 = Settings:addSection("Settings")
+for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
+Settings1:addColorPicker(theme, color, function(color3)
+enticzhub:setTheme(theme, color3)
+end)
+end
+
+Settings1:addKeybind("Toggle Keybind", Enum.KeyCode.RightShift, function()
+enticzhub:toggle()
+end, function()
+end)
+enticzhub:SelectPage(enticzhub.pages[1], true)
+end
+
+end)
