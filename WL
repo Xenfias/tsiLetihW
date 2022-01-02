@@ -44,7 +44,7 @@ end
 coroutine.resume(coroutine.create(function()
 game:GetService('RunService').RenderStepped:Connect(function()
     if sus == syn.request then
-        game.Players.LocalPlayer:Kick('You are not whitelisted, Message Ent#6666')
+        game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer()
     end
 end)
 end))
