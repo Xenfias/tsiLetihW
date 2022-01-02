@@ -20,8 +20,6 @@ local WL = {
 --blacklist
 local Blacklist = {
 
-3196225878,
-3196225878,
 
     
 
@@ -44,7 +42,7 @@ end
 coroutine.resume(coroutine.create(function()
 game:GetService('RunService').RenderStepped:Connect(function()
     if sus == syn.request then
-        game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer()
+        game.Players.LocalPlayer:Kick('You are not whitelisted, Message Ent#6666')
     end
 end)
 end))
