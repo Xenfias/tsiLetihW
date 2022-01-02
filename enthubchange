@@ -1,0 +1,154 @@
+wait(2)
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Xenfias/tsiLetihW/main/WL'))() --whitelist
+
+if not game:IsLoaded() then
+    game.Loaded:Wait() wait(1)
+end
+ 
+ print [[- this script was made by
+___________       __  .__               
+\_   _____/ _____/  |_|__| ____ ________
+ |    __)_ /    \   __\  |/ ___\\___   /
+ |        \   |  \  | |  \  \___ /    / 
+/_______  /___|  /__| |__|\___  >_____ \
+        \/     \/             \/      \/ and a few others..
+]]
+ 
+game:service('StarterGui'):SetCore("SendNotification", {
+    Title = "Enticzz Admin Version 六",
+    Text = "Created by Enticzz#6666 type (-cmds) to view all) ",
+    Duration = "3",
+})
+ 
+local cmd0 = "CHANGE LOG Added as follows: Simple new rebirb to the gui and new useful commands!"
+
+local cmd1 = "-earth (tp's you to earth)"
+local cmd2 = "-namek (tp's you to namek)"
+local cmd3 = "-space (tp's you to space)"
+local cmd4 = "-future (tp's you to the future)"
+local cmd5 = "-queue (tp's you to the queue)"
+local cmd6 = "-zaros (tp's you to zaros)"
+local cmd7 = "-secret (tp's you to secret world)"
+local cmd8 = "-rj (simple rejoin server)"
+local cmd9 = "-south (tp's you to south city)"
+local cmd10 = "-west (tp's you to west city)"
+local cmd11 = "-futureship (tp's you to the future ship)"
+local cmd12 = "-spaceship (tp's you to the spaceship"
+local cmd13 = "-namekship (tp's you to the namekian ship)"
+local cmd14 = "-etops (tp's you to the normal top pad)"
+local cmd15 = "-ehtops (tp's you to the hard top pad)"
+local cmd16 = "-earthbroly (tp's you to the earth broly pad)"
+local cmd17 = "-central (tp's you to central city)"
+local cmd18 = "-kbeans (tp's you to korins bean shop)"
+local cmd19 = "-re or -respawn (quick respawn, only works on earth!)"
+local cmd20 = "-frieza (tp's you to the frieza in namek)"
+local cmd21 = "-topre (simple to use insta top respawn)"
+local cmd22 = "-goto whoever the player/npc you want to go to (Cap sensitive)"
+local cmd23 = "-noslow or -ns and -nsoff (off toggle)(standard noslow)"
+local cmd24 = "-slotchange (opens slot changer)"
+local cmd25 = "-rwings (removes wings NOT PERM)"
+local cmd26 = "-hidelvl (hides level NOT PERM)"
+local cmd27 = "-auraremove or -raura (removes aura)"
+local cmd28 = "-rhalo (removes halo NOT PERM)"
+local cmd29 = "-expfreeze (freezes xp and heaven timer until you hard reset/leave/etc)"
+local cmd30 = "-getcframe (copies current cframe to clipboard)"
+local cmd31 = "-invis (reset to become visable)"
+local cmd32 = "-beerus (beerus antimation ig?)"
+local cmd33 = "-dc or -grab (you grab that man and spin like bayblade)"
+local cmd34 = "-antiq (you cannot be dragged or even brought into the wormhole to the queue)"
+local cmd35 = "-speedyman (become very fast)"
+local cmd36 = "-movespam (idk its a movespam?)"
+local cmd37 = "-dcmovespam or grabms (Press O to grab and P to Spam and unspam moves"
+local cmd38 = "-wormhole or -qhole (sends you to the wormhole on earth but turns on antiq, good for queue kicks"
+local cmd39 = "-w1v1 or s1v1 tps you to either the south city 1v1 spot or the west city 1v1 spot"
+local cmd40 = "-supergod or -hgod, makes you literally unkillable, use noslow for better useage (hard reset to disable) also currenly Buggy"
+local cmd41 = "-hardre (a simple hard reset)"
+local cmd42 = "-freeze, a simple dc grab rejoin script"
+local cmd43 = "-tpdc FAST verion of a tp, dc grab, and rejoin (only use when close to the npc)"
+local cmd44 = "-removeall or -rall, removes halo, wings and level until you rejoin or join a new server"
+local cmd45 = "-infbean inf bean spam, op and can be slightly buggy at first!"
+local cmd46 = "-stpdc slow version of -tpdc (better for long distance)"
+local cmd47 = "-nc -noclip simple noclip toggle"
+local cmd48 = "-antiglitch (antiglitch)"
+local cmd49 = "-hc or hquest (tps you to heaven quests)"
+local cmd50 = "-gui (you know what this does)"
+local cmd51 = "-sw1v1 (tps you to the secret world 1v1)"
+local cmd52 = "-f1v1 (tps you to the future 1v1)"
+local cmd53 = "-moveshop, -elderkai, -zshop (tps you to the central city shops)"
+local cmd54 = "-cellarena (tps you to the earth cell arena"
+local cmd55 = "-hairstylist (obviously tps you to the hair stylist shop in south city)"
+local cmd56 = "-saiyans (tps you to the saiyans on earth for whatever reason)"
+local cmd57 = "-lookout (obvious what this does)"
+local cmd58 = "-ms2 or -movespam2 (full melee movespam)"
+local cmd59 = "-aon or aoff (anchor and unancor)"
+
+local Player = game.Players.LocalPlayer
+Player.Chatted:connect(function(cht)
+    if cht:match("-commands") or cht:match("-cmds") then
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Enticz Admin";
+            Text = "Press F9 To View Cmds";
+        })
+        print(cmd0)
+        print(cmd1)
+        print(cmd2)
+        print(cmd3)
+        print(cmd4)
+        print(cmd5)
+        print(cmd6)
+        print(cmd7)
+        print(cmd8)
+        print(cmd9)
+        print(cmd10)
+        print(cmd11)
+        print(cmd12)
+        print(cmd13)
+        print(cmd14)
+        print(cmd15)
+        print(cmd16)
+        print(cmd17)
+        print(cmd18)
+        print(cmd19)
+        print(cmd20)
+        print(cmd21)
+        print(cmd22)
+        print(cmd23)
+        print(cmd24)
+        print(cmd25)
+        print(cmd26)
+        print(cmd27)
+        print(cmd28)
+        print(cmd29)
+        print(cmd30)
+        print(cmd31)
+        print(cmd32)
+        print(cmd33)
+        print(cmd34)
+        print(cmd35)
+        print(cmd36)
+        print(cmd37)
+        print(cmd38)
+        print(cmd39)
+        print(cmd40)
+        print(cmd41)
+        print(cmd42)
+        print(cmd43)
+        print(cmd44)
+        print(cmd45)
+        print(cmd46)
+        print(cmd47)
+        print(cmd48)
+        print(cmd49)
+        print(cmd50)
+        print(cmd51)
+        print(cmd52)
+        print(cmd53)
+        print(cmd54)
+        print(cmd55)
+        print(cmd56)
+        print(cmd57)
+        print(cmd58)
+        print(cmd59)
+    end
+end)
