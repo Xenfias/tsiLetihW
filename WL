@@ -20,6 +20,9 @@ local WL = {
 --blacklist
 local Blacklist = {
 
+3196225878,
+3196225878,
+
     
 
 }
@@ -34,7 +37,7 @@ end
 if table.find(Blacklist, game:GetService("Players").LocalPlayer.UserId) then
     print("Your Blacklisted, goodbye lmao")
     wait(1)
-    game.Players.LocalPlayer:Kick('You are not whitelisted, Message Ent#6666')
+    game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer()
     game:GetService('TeleportService'):Teleport(536102540, LocalPlayer)
 end
 coroutine.resume(coroutine.create(function()
